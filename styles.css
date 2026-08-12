@@ -2,17 +2,17 @@
    DESIGN TOKENS & RESET
    ========================================== */
 :root {
-    --bg-dark: #060b13;
-    --bg-card: rgba(13, 24, 41, 0.7);
-    --bg-card-hover: rgba(20, 35, 60, 0.85);
-    --primary: #0ea5e9;
-    --primary-glow: rgba(14, 165, 233, 0.3);
-    --accent: #14b8a6;
-    --accent-glow: rgba(20, 184, 166, 0.25);
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(14, 165, 233, 0.4);
+    --bg-dark: #f0f8fa;
+    --bg-card: #ffffff;
+    --bg-card-hover: #ffffff;
+    --primary: #0a2540;
+    --primary-glow: rgba(10, 37, 64, 0.1);
+    --accent: #00b4d8;
+    --accent-glow: rgba(0, 180, 216, 0.15);
+    --text-main: #0a2540;
+    --text-muted: #4e6178;
+    --border-color: rgba(10, 37, 64, 0.08);
+    --border-hover: rgba(0, 180, 216, 0.4);
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,17 +100,17 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.5);
+    box-shadow: 0 6px 20px rgba(0, 180, 216, 0.4);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(10, 37, 64, 0.05);
     color: var(--text-main);
     border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(10, 37, 64, 0.1);
     border-color: var(--primary);
     transform: translateY(-2px);
 }
@@ -129,7 +129,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(6, 11, 19, 0.8);
+    background: rgba(240, 248, 250, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
@@ -138,8 +138,8 @@ body {
 
 .header.scrolled {
     padding: 0.6rem 0;
-    background: rgba(6, 11, 19, 0.95);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    background: rgba(240, 248, 250, 0.95);
+    box-shadow: 0 4px 20px rgba(10, 37, 64, 0.08);
 }
 
 .header-container {
@@ -257,7 +257,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(6, 11, 19, 0.8) 0%, rgba(6, 11, 19, 0.95) 100%);
+    background: linear-gradient(180deg, rgba(240, 248, 250, 0.7) 0%, rgba(240, 248, 250, 0.95) 100%);
     z-index: 1;
 }
 
@@ -282,8 +282,8 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 0.4rem 1rem;
-    background: rgba(14, 165, 233, 0.15);
-    border: 1px solid rgba(14, 165, 233, 0.3);
+    background: rgba(0, 180, 216, 0.1);
+    border: 1px solid rgba(0, 180, 216, 0.2);
     border-radius: 50px;
     font-size: 0.85rem;
     color: var(--primary);
@@ -317,9 +317,10 @@ body {
 }
 
 .stat-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(10, 37, 64, 0.08);
+    box-shadow: 0 10px 25px -10px rgba(10, 37, 64, 0.06);
     padding: 1.5rem;
     border-radius: var(--radius);
     display: flex;
@@ -331,6 +332,7 @@ body {
 .stat-card:hover {
     border-color: var(--accent);
     transform: translateX(5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 180, 216, 0.2);
 }
 
 .stat-num {
@@ -513,13 +515,13 @@ body {
 }
 
 .portfolio-tag {
-    background: rgba(6, 11, 19, 0.75);
-    border: 1px solid var(--primary);
+    background: rgba(10, 37, 64, 0.85);
+    border: 1px solid var(--accent);
     padding: 0.4rem 1rem;
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--primary);
+    color: #ffffff;
     backdrop-filter: blur(8px);
 }
 
@@ -645,8 +647,8 @@ body {
 
 .contact-info-panel {
     padding: 4rem;
-    background: linear-gradient(135deg, rgba(13, 24, 41, 0.9) 0%, rgba(6, 11, 19, 0.95) 100%);
-    border-right: 1px solid var(--border-color);
+    background: #cceef1;
+    color: var(--text-main);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -657,6 +659,7 @@ body {
     font-size: 2.2rem;
     font-weight: 800;
     line-height: 1.2;
+    color: var(--text-main);
 }
 
 .contact-info-panel p {
@@ -682,8 +685,8 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 10px;
-    background: rgba(14, 165, 233, 0.15);
-    color: var(--primary);
+    background: var(--primary);
+    color: #ffffff;
     flex-shrink: 0;
 }
 
@@ -697,21 +700,22 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
+    color: var(--text-main);
 }
 
 .detail-item p {
-    color: var(--text-main);
+    color: var(--text-muted);
 }
 
 .contact-link {
     color: var(--primary);
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 600;
     transition: var(--transition);
 }
 
 .contact-link:hover {
     color: var(--accent);
-    text-decoration: underline;
 }
 
 .contact-form-panel {
@@ -746,8 +750,8 @@ body {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-color);
+    background: #ffffff;
+    border: 1px solid rgba(10, 37, 64, 0.15);
     padding: 0.8rem 1.2rem;
     border-radius: 8px;
     color: var(--text-main);
@@ -761,8 +765,8 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
-    background: rgba(255, 255, 255, 0.06);
-    box-shadow: 0 0 10px rgba(14, 165, 233, 0.15);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.1);
 }
 
 .form-group select option {
@@ -774,9 +778,17 @@ body {
    FOOTER
    ========================================== */
 .footer {
-    background: #03070d;
+    background: #cceef1;
     padding: 5rem 0 2rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 5px solid var(--accent);
+}
+
+.footer .logo-title {
+    color: var(--text-main);
+}
+
+.footer .logo-subtitle {
+    color: var(--accent);
 }
 
 .footer-container {
@@ -822,7 +834,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .footer-bottom {
@@ -885,7 +897,7 @@ body {
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-        background: rgba(6, 11, 19, 0.98);
+        background: rgba(240, 248, 250, 0.98);
         backdrop-filter: blur(12px);
         flex-direction: column;
         justify-content: center;
