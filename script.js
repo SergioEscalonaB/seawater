@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Scroll Reveal (Simple Fade In)
-    const revealElements = document.querySelectorAll('.about-info, .mv-card, .portfolio-card, .value-card, .contact-box');
+    const revealElements = document.querySelectorAll('.about-info, .mv-card, .portfolio-card, .value-card, .gallery-card, .contact-box');
     const revealOnScroll = () => {
         const triggerBottom = window.innerHeight * 0.85;
         revealElements.forEach(el => {
