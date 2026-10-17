@@ -73,7 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // WhatsApp Message Formatting
             const whatsappNumber = '573004471043';
-            const baseText = `*SEAWATER SUPPLY CO - New Inquiry*\n\n` +
+            const baseText = `Hello SEAWATER SUPPLY CO team! I'd like to request a quote for vessel supplies.\n\n` +
+                             `*Inquiry details*\n` +
                              `*Name:* ${name}\n` +
                              `*Vessel Name:* ${vessel}\n` +
                              `*Destination Port:* ${port}\n\n` +
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
             // Open WhatsApp link in a new window
-            window.open(whatsappUrl, '_blank');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         });
     }
 

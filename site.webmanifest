@@ -1,0 +1,17 @@
+{
+  "name": "SEAWATER SUPPLY CO",
+  "short_name": "SEAWATER",
+  "description": "24/7 ship supplier serving all Colombian ports.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071c2c",
+  "theme_color": "#071c2c",
+  "icons": [
+    {
+      "src": "/assets/SeaWater%20png.png",
+      "type": "image/png",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}
